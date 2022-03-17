@@ -11,7 +11,7 @@
 .problem{
     background-color: red;
     font-size: large;
-    height: 2em;
+    height: auto;
 }
 .container{
     position: fixed;
