@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.message{
+    height: auto;
+}
+.SD{
+    font-size: larger;
+}
+.problem{
+    background-color: red;
+    font-size: large;
+    height: 2em;
+}
+.container{
+    position: fixed;
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cube{
+    position: fixed;
+    height: 33vh;
+    width: 33vh;
+    transform-style: preserve-3d;
+    animation: revolve 5s infinite linear;
+}
+.side{
+    transform-style: preserve-3d;
+    opacity: 0.9;
+    position: absolute;
+    width: 33vh;
+    height: 33vh;
+    border: 2px solid black;
+}
+.front{
+    background-color: red;
+    transform: translateZ(17vh);
+    
+}
+.back{
+    background-color: yellow;
+    transform: translateZ(-17vh);
+}
+
+.top{
+    background-color: blue;
+    transform: rotateX(90deg) translateZ(17vh);
+}
+.bottom{
+    background-color: green;
+    transform: rotateX(90deg) translateZ(-17vh);
+}
+.left{
+    background-color: white;
+    transform: rotateY(90deg) translateZ(17vh);
+}
+.right{
+    background-color: aqua;
+    transform: rotateY(90deg) translateZ(-17vh);
+}
